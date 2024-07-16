@@ -47,9 +47,9 @@ a {
   align-items: center;
   padding: 12px 0;
 }
-.navbar .menu,
-.navbar .logo {
-  flex: 1;
+
+.navbar .menu {
+  margin-left: auto;
 }
 .navbar .menu {
   display: flex;
@@ -60,20 +60,31 @@ a {
   display: flex;
 }
 .navbar ul a {
-  margin: 0 24px;
+  position: relative;
+  padding: 8px 21px;
   color: #5f5b53;
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.75; /* 175% */
 }
-.navbar ul a:hover {
+.navbar ul a:hover,
+.navbar li.active a {
   color: #171100;
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 28px; /* 175% */
-  text-decoration: underline;
+  text-shadow: 1px 0 0 currentColor;
+}
+
+.navbar li.active a::after {
+  content: "";
+  position: absolute;
+  left: 21px;
+  bottom: 6px;
+  display: block;
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #171100;
 }
 .navbar .action .btn {
+  margin-left: 49px;
   padding: 8px 12px;
   border-radius: 24.5px;
   background: #171100;
