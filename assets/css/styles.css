@@ -26,19 +26,26 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .btn {
   display: inline-block;
   min-width: 98px;
-  color: #fff;
   text-align: center;
   font-family: Poppins;
 }
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
 /* Fixed-header */
 .fixed-header {
   padding-top: 24px;
   position: sticky;
+  top: 0;
   background: #fffcf4;
 }
 
@@ -92,4 +99,100 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
   line-height: 1.75; /* 175% */
+}
+
+.hero-wrap {
+  padding: 72px 0 65px;
+  background: #fffcf4;
+}
+.hero-wrap .info {
+  display: flex;
+}
+
+.hero-wrap .info .stu {
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.hero-wrap .about {
+  margin-top: 64px;
+  padding-left: 230px;
+}
+.hero-wrap .title {
+  color: #171100;
+  font-family: Sen;
+  font-size: 5.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.17241; /* 117.241% */
+  letter-spacing: -1.16px;
+}
+.hero-wrap .desc {
+  margin-top: 22px;
+  color: #5f5b53;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.66667; /* 166.667% */
+}
+
+.hero-wrap .row {
+  display: flex;
+  align-items: center;
+}
+.hero-wrap .btn {
+  min-width: 180px;
+  border-radius: 32px;
+  background: #ffb900;
+  color: #fff;
+  padding: 17px 12px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 1.8rem;
+}
+
+.hero-wrap .row-top {
+  margin-top: 38px;
+}
+
+.hero-wrap .action {
+  display: flex;
+  align-items: center;
+}
+
+.hero-wrap .action img {
+  margin-top: 8px;
+  width: 40px;
+  height: 40px;
+  margin-left: 28px;
+}
+.hero-wrap .click-cta {
+  color: #171100;
+
+  font-family: Poppins;
+  font-size: 1.8rem;
+}
+
+.hero-wrap .stats {
+  padding-top: 26px;
+}
+.hero-wrap .stats .qty {
+  color: #171100;
+  font-family: Sen;
+  font-size: 4.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.22727; /* 122.727% */
+}
+
+.hero-wrap .stats .item {
+  color: #5f5b53;
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.8;
+  margin: 0 12px 28px;
 }
